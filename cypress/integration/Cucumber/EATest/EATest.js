@@ -3,14 +3,9 @@ import {Given, And, Then} from "cypress-cucumber-preprocessor/steps"
 
 const url = "https://www.google.com"
 
-
-
-
 Given("I vist google", ()=>{
-    
     cy.log(this.userdata.name)
     cy.visit(url)
-    
 })
 
 Given("I search {string} in google", (searchKey)=>{
@@ -22,11 +17,9 @@ Given("I search {string} in google", (searchKey)=>{
 
     const data = "P77123456"
     cy.log("Print complete data : "+data)
-
     const split1 = data.charAt(0);
     const splitDocNum = data.split(split1);
     const docNum = splitDocNum[1].split(",").toString();
-
     cy.log(split1)
     cy.log(splitDocNum)
     cy.log(docNum)
