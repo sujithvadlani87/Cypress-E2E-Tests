@@ -1,0 +1,20 @@
+{
+  "name": "automation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "sujithvadlani",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^4.5.0",
+    "cypress-cucumber-preprocessor": "^2.3.1",
+    "mocha": "^7.1.2",
+    "mochawesome": "^6.1.1"
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": true
+  }
+}
