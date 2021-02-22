@@ -1,4 +1,4 @@
 { 
-    
-    "reporter": "reporters/custom.js"
+    "reporter": "reporters/custom.js",
+    "baseUrl":"https://www.google.com"
 }

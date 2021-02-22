@@ -1,10 +1,10 @@
 /// <reference types="cypress"/>
 import {Given, And, Then} from "cypress-cucumber-preprocessor/steps"
+import { config } from "cypress/types/bluebird"
 
 const url = "https://www.google.com"
 
 Given("I vist google", ()=>{
-    cy.log(this.userdata.name)
     cy.visit(url)
 })
 
